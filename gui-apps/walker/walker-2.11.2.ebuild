@@ -278,6 +278,8 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="amd64"
 
+DEPEND="gui-libs/gtk4-layer-shell"
+
 src_prepare() {
 	default
 }
