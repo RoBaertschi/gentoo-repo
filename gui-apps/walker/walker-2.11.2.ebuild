@@ -278,7 +278,10 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND="gui-libs/gtk4-layer-shell"
+DEPEND="
+	gui-libs/gtk4-layer-shell
+	>=app-text/poppler-25.11.0
+"
 
 src_prepare() {
 	default
