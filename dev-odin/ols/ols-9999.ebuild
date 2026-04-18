@@ -55,6 +55,11 @@ SLOT="0"
 # only need to be present in the native build system (CBUILD). Example:
 BDEPEND="=dev-lang/odin-9999"
 
+src_prepare() {
+	eapply "${FILESDIR}"/ols-remove-const-keyword.patch
+	eapply_user
+}
+
 src_compile() {
 	./build.sh || die "failed to build ols"
 }

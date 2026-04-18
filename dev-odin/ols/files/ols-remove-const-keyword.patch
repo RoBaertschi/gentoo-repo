@@ -1,0 +1,12 @@
+diff --git a/src/server/documentation.odin b/src/server/documentation.odin
+index d6bcf5bf..50f30f00 100644
+--- a/src/server/documentation.odin
++++ b/src/server/documentation.odin
+@@ -1036,7 +1036,6 @@ keywords_docs: map[string]string = {
+ 	"break"         = "",
+ 	"case"          = "",
+ 	"cast"          = "```odin\ncast(T)v\n```\nConverts the value `v` to the type `T`.",
+-	"const"         = "",
+ 	"context"       = "```odin\nruntime.context: Context\n```\nThe context variable is local to each scope. It is copy-on-write and is implicitly passed by pointer to any procedure call in that scope (if the procedure has the Odin calling convention).",
+ 	"continue"      = "",
+ 	"defer"         = "",
