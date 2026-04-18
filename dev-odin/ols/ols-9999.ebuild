@@ -70,4 +70,6 @@ src_test() {
 
 src_install() {
 	dobin ols
+	insinto /usr/share/ols
+	doins -r "${S}/builtin"
 }
